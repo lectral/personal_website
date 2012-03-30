@@ -1,0 +1,104 @@
+$(document).bind('keystrokes', { 
+  keys: ['A']
+ }, function(event){
+	  printChar("A");});
+$(document).bind('keystrokes', { 
+  keys: ['B']
+ }, function(event){
+	  printChar("B");});
+$(document).bind('keystrokes', { 
+  keys: ['C']
+ }, function(event){
+	  printChar("C");});
+$(document).bind('keystrokes', { 
+  keys: ['D']
+ }, function(event){
+	  printChar("D");});
+$(document).bind('keystrokes', { 
+  keys: ['E']
+ }, function(event){
+	  printChar("E");});
+$(document).bind('keystrokes', { 
+  keys: ['F']
+ }, function(event){
+	  printChar("F");});
+$(document).bind('keystrokes', { 
+  keys: ['G']
+ }, function(event){
+	  printChar("G");});
+$(document).bind('keystrokes', { 
+  keys: ['H']
+ }, function(event){
+	  printChar("H");});
+$(document).bind('keystrokes', { 
+  keys: ['I']
+ }, function(event){
+	  printChar("I");});
+$(document).bind('keystrokes', { 
+  keys: ['J']
+ }, function(event){
+	  printChar("J");});
+$(document).bind('keystrokes', { 
+  keys: ['K']
+ }, function(event){
+	  printChar("K");});
+$(document).bind('keystrokes', { 
+  keys: ['L']
+ }, function(event){
+	  printChar("L");});
+$(document).bind('keystrokes', { 
+  keys: ['M']
+ }, function(event){
+	  printChar("M");});
+$(document).bind('keystrokes', { 
+  keys: ['N']
+ }, function(event){
+	  printChar("N");});
+$(document).bind('keystrokes', { 
+  keys: ['O']
+ }, function(event){
+	  printChar("O");});
+$(document).bind('keystrokes', { 
+  keys: ['P']
+ }, function(event){
+	  printChar("P");});
+$(document).bind('keystrokes', { 
+  keys: ['Q']
+ }, function(event){
+	  printChar("Q");});
+$(document).bind('keystrokes', { 
+  keys: ['R']
+ }, function(event){
+	  printChar("R");});
+$(document).bind('keystrokes', { 
+  keys: ['S']
+ }, function(event){
+	  printChar("S");});
+$(document).bind('keystrokes', { 
+  keys: ['T']
+ }, function(event){
+	  printChar("T");});
+$(document).bind('keystrokes', { 
+  keys: ['U']
+ }, function(event){
+	  printChar("U");});
+$(document).bind('keystrokes', { 
+  keys: ['V']
+ }, function(event){
+	  printChar("V");});
+$(document).bind('keystrokes', { 
+  keys: ['W']
+ }, function(event){
+	  printChar("W");});
+$(document).bind('keystrokes', { 
+  keys: ['X']
+ }, function(event){
+	  printChar("X");});
+$(document).bind('keystrokes', { 
+  keys: ['Y']
+ }, function(event){
+	  printChar("Y");});
+$(document).bind('keystrokes', { 
+  keys: ['Z']
+ }, function(event){
+	  printChar("Z");});

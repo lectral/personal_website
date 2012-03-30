@@ -1,0 +1,34 @@
+
+body	{
+	background-color: #000000;
+}
+
+@font-face {
+	font-family: font;
+	src: url('font.ttf');
+}
+
+/* link styling */
+a:link		{color:#FFFFFF; text-decoration:underline;}
+a:visited	{color:#FFFFFF; text-decoration:underline;}
+a:hover		{color:#FFFFFF; text-decoration:underline;}
+a:active	{color:#FFFFFF; text-decoration:underline;}
+
+.searchBox{
+  	background-color: #000000;
+  	border: none;
+	padding-left:20px;
+}
+
+.output{
+   color:white;
+   font-family: font,Times, sans-serif;
+   font-size: normal;
+}
+
+.styleOutput{
+   color:white;
+   font-family: font, Times, sans-serif;
+   font-size: normal;
+}
+
