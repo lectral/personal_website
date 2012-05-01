@@ -1,1 +1,6 @@
-[ Cpt. Placeholder ]
+<pre class=styleOutput>1. Fun with three.js - Simple Solar System
+	lang: js
+	libs: jquery, three.js
+	link: <a href="http://vps.mirecki.info/solar">vps.mirecki.info/solar</a>
+	alert: Works only in newest browsers!
+</pre>
