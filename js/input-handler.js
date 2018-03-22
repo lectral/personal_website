@@ -16,7 +16,6 @@ $(document).keydown(function(handle) {
 			case 189:
 				printChar("-");
 				break;
-			
 		}
 	}
 	

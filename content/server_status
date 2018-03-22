@@ -1,6 +1,0 @@
-<pre class=styleOutput>ServerStatus 1.0
-Current status of all servers:
-
-Teamspeak 3 	: 	<font color=green><?php echo $ts3_status ?></font>
-Mumble 		: 	<font color=green><?php echo $mumble_status ?></font>
-</pre>

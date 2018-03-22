@@ -12,9 +12,7 @@ var command='';
 var params='';
 
 
-//Functions start
-
-//This function prevent Chrome browser from returning to previous website on backspace button.
+// Prevent Chrome from scrolling down
 $(document).keydown(function(e){
    e.preventDefault();
 });
@@ -28,8 +26,6 @@ function scrollme(){
 	}
 }
 
-
-
 function getPrompt(){
 	return cHost+" :"+cliLocation+endSign+' ';
 }
@@ -40,18 +36,21 @@ function getCurrentLine(){
 
 //Connects to php handler to get content
 function get_content(pName,id){
-	$.post("content_handler.php",{cname: pName},function(data){
-		var output = data.replace('\n',"<br>");
-		$(id).append("<div=\""+pName+"\>"+output+"</div>");
-	});
+  console.log("aaa");
+  $.ajax({
+    type: "GET",
+    url: "content/"+pName+".html",
+    dataType: "html",
+    success: function(data) {
+      var output = data.replace('\n',"<br>");
+      $(id).append("<div=\""+pName+"\>"+output+"</div>");
+    }});
 }
 
 $(document).ready(function(){
-	$.ajaxSetup({async:false});
-	$.ajaxSetup({cache:false});
-	get_content("motd",'.output');
-	$('.output').append("<div id=\"1\">\n"+getPrompt()+promptSign);
-	
+  inputString = "motd"
+	$('.output').append("<div id=\"1\"></div>");
+  enter();	
 });
 
 //Commands
@@ -82,6 +81,11 @@ function command_status(){
 function command_echo(par){
 	$("#"+lineCount).append(par);
 }
+
+function command_motd(par){
+  get_content("motd","#"+lineCount);
+}
+
 //Commands end
 
 //Commend register
@@ -94,6 +98,7 @@ function checkCommand(){
 			case "projects": 	command_projects(); break;
 			case "server-status": 	command_status(); break;
 			case "echo": 		command_echo(params); break;
+			case "motd": 		command_motd(params); break;
 			default: 			command_default(); 	break;
 }
 }
